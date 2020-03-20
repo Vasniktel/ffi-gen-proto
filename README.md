@@ -12,3 +12,5 @@ To run:
 - change `_libclangPath` variable in `lib/src/library_generator.dart` to match your system
 - you may additionally need to tune `_systemIncludePaths` in that same file
 - `cd example && pub run build_runner build`
+
+Right now, this library can generate code for functions, top-level variables, enums, typedefs. It handles all primitive types (`int`, `long`, `float`, `uint32_t`) as well as pointers to them. Note that this is not tested so there are possibly a lot of hidden corner cases, but it's good enough for a prototype I think ;).
