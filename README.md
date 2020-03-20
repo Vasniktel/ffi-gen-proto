@@ -10,5 +10,5 @@ This directory contains:
 To run:
 - compile `libclang_hooks.so`; be sure to change paths to `libclang` directories in `libclang_hooks/CMakeLists.txt` so that they match your system
 - change `_libclangPath` variable in `lib/src/library_generator.dart` to match your system
-- you may additionally need to tune `_systemIncludePaths` in that same directory
+- you may additionally need to tune `_systemIncludePaths` in that same file
 - `cd example && pub run build_runner build`
