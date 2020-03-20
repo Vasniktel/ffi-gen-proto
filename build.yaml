@@ -1,0 +1,8 @@
+builders:
+  ffi_builder:
+    import: "package:ffi_gen/builders.dart"
+    builder_factories: ["ffiBuilder"]
+    build_extensions: {"dart": [".ffi_builder.g.dart"]}
+    auto_apply: dependents
+    build_to: cache
+    applies_builders: ["source_gen|combining_builder"]
